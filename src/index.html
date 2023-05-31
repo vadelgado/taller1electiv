@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Taller1 | Turnero</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+  <!-- Barra de navegacion -->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <!-- cambio lg a md para se cambie en tama;o mediano \\ navbar-light barra blanca-->
+    <div class="container-fluid">
+      <!--Contenedor se ajusta al 100%-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <a class="navbar-brand" href="index.html">
+          <img src="favicon.ico" width="50" alt="Logo de la página web" />
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <!--Contenedor flexible y aliniado al centro por el eje principal y el eje vertical-->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Taller 1 | Turnero</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seccion Hero -->
+  <section class="hero align-items-stretch ">
+    <!--Los elementos de van a estirar para llenar su contenedor en el eje perpendicular-->
+    <div class="hero-principal d-flex flex-column justify-content-center align-items-center seccion-oscura">
+      <img class="hero-imagen-mascota" src="assets/logo-udenar .png" alt="foto de mascota" />
+      <h1>Universidad de Nariño</h1>
+      <h2><strong>Elaborado por: </strong>Victor Alfonso Delgado Bolaños</h2>
+      <h2>Electiva de programación avanzada 2</h2>
+      <h2><strong>Presentado a: </strong>Diego Javier Villarreal Moreno</h2>
+    </div>
+  </section>
+
+  <!--App Component Principal-->
+  <section class="titulo">
+    <app-root></app-root>
+  </section>
+
+</body>
+
+</html>

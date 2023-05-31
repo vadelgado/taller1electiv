@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-2">
+      <button [class]="colorButton1" (click)="decrementar()">-</button>
+    </div>
+    <div class="col-8">
+      <p [class]="colorTexto">Estado del Turno: <span>{{ numero }}</span></p>
+    </div>
+    <div class="col-2">
+      <button [class]="colorButton2" (click)="incrementar()">+</button>
+    </div>
+  </div>
+  <div class="row" *ngIf="mostrarMensaje">
+    <div class="col-12">
+      <div class="alert alert-danger">¡Se acabaron los turnos!</div>
+    </div>
+  </div>
+</div>
